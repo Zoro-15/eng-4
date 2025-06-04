@@ -1,0 +1,77 @@
+
+/* Modern Design - Mocks Wallah Upgrade */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+    --primary: #4361ee;
+    --secondary: #3f37c9;
+    --success: #4cc9f0;
+    --danger: #f72585;
+    --warning: #f8961e;
+    --light: #f8f9fa;
+    --dark: #212529;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f5f7fa;
+    min-height: 100vh;
+    color: #2d3436;
+    line-height: 1.6;
+    padding: 15px;
+}
+
+.hdr {
+    background: var(--primary);
+    color: white;
+    padding: 12px 15px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.qc {
+    background: white;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.leaderboard {
+    background: white;
+    border-radius: 16px;
+    padding: 15px;
+    margin-top: 20px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+button, .sub, .nb {
+    background: var(--primary);
+    color: white!important;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:hover, .sub:hover, .nb:hover {
+    background: var(--secondary);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .qc, .leaderboard {
+        padding: 15px;
+        margin: 10px 0;
+    }
+
+    .opts .opt {
+        padding: 12px;
+        font-size: 15px;
+    }
+}
